@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Logo 3B BOGRE</title>
+</head>
+<body>
+
+<h1>Welcome to ThreeBees!</h1>
+<p>This is a paragraph.</p>
+
+<svg>
+    <circle id="rot" cx="0" cy="1" r="2" stroke="green" fill="none"/>
+</svg>
+<script type="text/javascript">
+    /*
+    * Add some animation to our 3Blogo SVG
+    */
+    function rotate(evt) {
+        var object = evt.target.ownerDocument.getElementById('rot');
+        setInterval(function () {
+            var now          = new Date();
+            var milliseconds = now.getTime() % 1000;
+            var degrees      = milliseconds * 0.36; // 360 degrees in 1000 ms
+            object.setAttribute('transform', 'rotate(' + degrees + ')');
+        }, 20);
+    }
+</script>
+
+</body>
+</html>
