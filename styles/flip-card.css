@@ -11,8 +11,6 @@
 
 /* This container is needed to position the front and back side */
 .flip {
-    width: 100%;
-    height: 100%;
     transform-style: preserve-3d;
     transition: transform 1.0s linear;
 }
